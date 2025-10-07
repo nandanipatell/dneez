@@ -636,7 +636,7 @@ ul.countdown li p:after {
 /* 📱 Mobile view: for screens 425px and below */
 @media (max-width: 425px) {
 	ul.countdown li {
-		width: 120px;
+		width: 130px;
 		height: 90px;
 		margin: 5px;
 	}
@@ -1046,5 +1046,6 @@ retina ----- */
 		width: 90%;
 		margin-left: 1%;
 	}
+
 
 }
