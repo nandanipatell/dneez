@@ -18,3 +18,15 @@ $(document).ready(function () {
 $(window).on("resize", function () {
     videoint();
 });
+
+$(document).ready(function () {
+    videoint();
+
+    var video = document.getElementById("bgVideo");
+    video.play().catch(() => {
+        // iPhone Safari may block autoplay; retry on first touch
+        $("body").one("touchstart", function () {
+            video.play();
+        });
+    });
+});
